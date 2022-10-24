@@ -1,0 +1,6 @@
+@charset "UTF-8"; /*Retrato (em pé)*/
+
+body{
+    background-image: url(i/cev-portrait.jpg);
+    background-position: left bottom;
+}
