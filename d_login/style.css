@@ -1,0 +1,120 @@
+@charset "UTF-8"; /*mobile frist*/
+
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    background-color: var(--lilas);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .45);
+
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+    transform: translate(-50%,-50%); /*Colocar TRANSFORMs e TRANSITIONs no final*/
+}
+
+section#login div#imagem{
+    display: block;
+    background: blue url(metal.jpg) no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+section#login div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario p{
+    font-size: .8em;
+}
+
+div.campo{
+    background-color: var(--lilas); height: 40px;
+    border-radius: 8px; margin: 5px 0px;
+}
+
+label{display: none;}
+
+div.campo>i{
+    color: white; font-size: 2em; width: 40px; padding: 5px;
+}
+
+div.campo>input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: 79%;
+    height: 75%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo>input:focus-within{
+    background-color: white;
+}
+
+input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{background-color: #2d6462;}
+
+a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px; margin-top: 5px;
+    background-color: #6cd3cf;
+    color: #2d6462;
+    border: var(--verde);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a.botao:hover{background-color: orange;}
+
+a.botao>i{font-size: .8em;}
